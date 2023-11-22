@@ -1,7 +1,10 @@
 import os
+import random 
 
 cubeFile = "cube.txt"
+packSize = 15
 
+bonusPack = []
 data = []
 poolList = []
 with open(cubeFile) as cubeList:
@@ -25,3 +28,11 @@ for pool in poolList:
                 print (currentCard)
                 data.remove(currentCard)
 print (data)
+
+for i in range (1, packSize):
+    chosenCard = random.choice(data)
+    print(chosenCard)
+    bonusPack.append(chosenCard)
+    data.remove(chosenCard)
+
+print (bonusPack)
