@@ -11,7 +11,7 @@ poolList = []
 with open(cubeFile) as cubeList:
     for val in cubeList.readlines():
         val = val.strip('\n')
-        if  not val.startswith("# ") and len(val)> 0:
+        if  not val.startswith("# ") and len(val) > 0:
             val = val.strip('\n')
             data.append(val) 
 
