@@ -6,7 +6,7 @@ packSize = 15
 
 bonusPack = []
 data = []
-poolList = []
+poolList = [] 
 with open(cubeFile) as cubeList:
     for val in cubeList.readlines():
         if val and val !="# mainboard" and val !="# sideboard" and val != "# maybeboard" and val != '':
